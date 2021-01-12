@@ -12,7 +12,6 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from google.protobuf import struct_pb2 as google_dot_protobuf_dot_struct__pb2
 from google.protobuf import timestamp_pb2 as google_dot_protobuf_dot_timestamp__pb2
 
 
@@ -22,9 +21,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z3github.com/dopl-technologies/api-protos-go;dtprotos\252\002\027DoplTechnologies.Protos',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x0c\x63ommon.proto\x12\x17\x64opltechnologies.protos\x1a\x1cgoogle/protobuf/struct.proto\x1a\x1fgoogle/protobuf/timestamp.proto\"G\n\x06\x44\x65vice\x12\n\n\x02id\x18\x01 \x01(\x04\x12\x31\n\x04info\x18\x02 \x01(\x0b\x32#.dopltechnologies.protos.DeviceInfo\"\xd1\x01\n\nDeviceInfo\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x31\n\x04type\x18\x02 \x01(\x0e\x32#.dopltechnologies.protos.DeviceType\x12\n\n\x02ip\x18\x03 \x01(\t\x12\x0c\n\x04port\x18\x04 \x01(\r\x12\x33\n\x08produces\x18\x05 \x03(\x0e\x32!.dopltechnologies.protos.DataType\x12\x33\n\x08\x63onsumes\x18\x06 \x03(\x0e\x32!.dopltechnologies.protos.DataType\".\n\x0b\x43oordinates\x12\t\n\x01x\x18\x01 \x01(\x02\x12\t\n\x01y\x18\x02 \x01(\x02\x12\t\n\x01z\x18\x03 \x01(\x02\"8\n\nQuaternion\x12\t\n\x01w\x18\x01 \x01(\x02\x12\t\n\x01x\x18\x02 \x01(\x02\x12\t\n\x01y\x18\x03 \x01(\x02\x12\t\n\x01z\x18\x04 \x01(\x02\"\x84\x01\n\x13\x43\x61theterCoordinates\x12\x36\n\x08position\x18\x01 \x01(\x0b\x32$.dopltechnologies.protos.Coordinates\x12\x35\n\x08rotation\x18\x02 \x01(\x0b\x32#.dopltechnologies.protos.Quaternion\"c\n\x0c\x43\x61theterData\x12\x10\n\x08sensorId\x18\x01 \x01(\r\x12\x41\n\x0b\x63oordinates\x18\x02 \x01(\x0b\x32,.dopltechnologies.protos.CatheterCoordinates\"e\n\x13RobotControllerData\x12\x18\n\x10movementVelocity\x18\x01 \x01(\x02\x12\x18\n\x10rotationVelocity\x18\x02 \x01(\x02\x12\x1a\n\x12\x64\x65\x66lectionVelocity\x18\x03 \x01(\x02\"\x8f\x01\n\x1bNullableRobotControllerData\x12*\n\x04null\x18\x01 \x01(\x0e\x32\x1a.google.protobuf.NullValueH\x00\x12<\n\x04\x64\x61ta\x18\x02 \x01(\x0b\x32,.dopltechnologies.protos.RobotControllerDataH\x00\x42\x06\n\x04kind\"d\n\x14\x45lectricalSignalData\x12\x10\n\x08signalId\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\x02\x12+\n\x07\x63reated\x18\x04 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\"\x96\x02\n\x05\x46rame\x12;\n\x0c\x63\x61theterData\x18\x01 \x03(\x0b\x32%.dopltechnologies.protos.CatheterData\x12Y\n\x1bnullableRobotControllerData\x18\x02 \x01(\x0b\x32\x34.dopltechnologies.protos.NullableRobotControllerData\x12H\n\x11\x65lectricalSignals\x18\x03 \x03(\x0b\x32-.dopltechnologies.protos.ElectricalSignalData\x12+\n\x07\x63reated\x18\x04 \x01(\x0b\x32\x1a.google.protobuf.Timestamp*a\n\nDeviceType\x12\t\n\x05Robot\x10\x00\x12\x0e\n\nController\x10\x01\x12\x0c\n\x08\x43\x61theter\x10\x02\x12\x0b\n\x07Headset\x10\x03\x12\x1d\n\x19\x45lectricalSignalGenerator\x10\x04*c\n\x08\x44\x61taType\x12\x0e\n\nRobotState\x10\x00\x12\x11\n\rRobotControls\x10\x01\x12\x1d\n\x19\x43\x61theterSensorCoordinates\x10\x02\x12\x15\n\x11\x45lectricalSignals\x10\x03\x42OZ3github.com/dopl-technologies/api-protos-go;dtprotos\xaa\x02\x17\x44oplTechnologies.Protosb\x06proto3'
+  serialized_pb=b'\n\x0c\x63ommon.proto\x12\x17\x64opltechnologies.protos\x1a\x1fgoogle/protobuf/timestamp.proto\"G\n\x06\x44\x65vice\x12\n\n\x02id\x18\x01 \x01(\x04\x12\x31\n\x04info\x18\x02 \x01(\x0b\x32#.dopltechnologies.protos.DeviceInfo\"\xd1\x01\n\nDeviceInfo\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x31\n\x04type\x18\x02 \x01(\x0e\x32#.dopltechnologies.protos.DeviceType\x12\n\n\x02ip\x18\x03 \x01(\t\x12\x0c\n\x04port\x18\x04 \x01(\r\x12\x33\n\x08produces\x18\x05 \x03(\x0e\x32!.dopltechnologies.protos.DataType\x12\x33\n\x08\x63onsumes\x18\x06 \x03(\x0e\x32!.dopltechnologies.protos.DataType\".\n\x0b\x43oordinates\x12\t\n\x01x\x18\x01 \x01(\x02\x12\t\n\x01y\x18\x02 \x01(\x02\x12\t\n\x01z\x18\x03 \x01(\x02\"8\n\nQuaternion\x12\t\n\x01w\x18\x01 \x01(\x02\x12\t\n\x01x\x18\x02 \x01(\x02\x12\t\n\x01y\x18\x03 \x01(\x02\x12\t\n\x01z\x18\x04 \x01(\x02\"\x84\x01\n\x13\x43\x61theterCoordinates\x12\x36\n\x08position\x18\x01 \x01(\x0b\x32$.dopltechnologies.protos.Coordinates\x12\x35\n\x08rotation\x18\x02 \x01(\x0b\x32#.dopltechnologies.protos.Quaternion\"c\n\x0c\x43\x61theterData\x12\x10\n\x08sensorId\x18\x01 \x01(\r\x12\x41\n\x0b\x63oordinates\x18\x02 \x01(\x0b\x32,.dopltechnologies.protos.CatheterCoordinates\"e\n\x13RobotControllerData\x12\x18\n\x10movementVelocity\x18\x01 \x01(\x02\x12\x18\n\x10rotationVelocity\x18\x02 \x01(\x02\x12\x1a\n\x12\x64\x65\x66lectionVelocity\x18\x03 \x01(\x02\"d\n\x14\x45lectricalSignalData\x12\x10\n\x08signalId\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\x02\x12+\n\x07\x63reated\x18\x04 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\"\x86\x02\n\x05\x46rame\x12;\n\x0c\x63\x61theterData\x18\x01 \x03(\x0b\x32%.dopltechnologies.protos.CatheterData\x12I\n\x13robotControllerData\x18\x02 \x01(\x0b\x32,.dopltechnologies.protos.RobotControllerData\x12H\n\x11\x65lectricalSignals\x18\x03 \x03(\x0b\x32-.dopltechnologies.protos.ElectricalSignalData\x12+\n\x07\x63reated\x18\x04 \x01(\x0b\x32\x1a.google.protobuf.Timestamp*a\n\nDeviceType\x12\t\n\x05Robot\x10\x00\x12\x0e\n\nController\x10\x01\x12\x0c\n\x08\x43\x61theter\x10\x02\x12\x0b\n\x07Headset\x10\x03\x12\x1d\n\x19\x45lectricalSignalGenerator\x10\x04*c\n\x08\x44\x61taType\x12\x0e\n\nRobotState\x10\x00\x12\x11\n\rRobotControls\x10\x01\x12\x1d\n\x19\x43\x61theterSensorCoordinates\x10\x02\x12\x15\n\x11\x45lectricalSignals\x10\x03\x42OZ3github.com/dopl-technologies/api-protos-go;dtprotos\xaa\x02\x17\x44oplTechnologies.Protosb\x06proto3'
   ,
-  dependencies=[google_dot_protobuf_dot_struct__pb2.DESCRIPTOR,google_dot_protobuf_dot_timestamp__pb2.DESCRIPTOR,])
+  dependencies=[google_dot_protobuf_dot_timestamp__pb2.DESCRIPTOR,])
 
 _DEVICETYPE = _descriptor.EnumDescriptor(
   name='DeviceType',
@@ -61,8 +60,8 @@ _DEVICETYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=1363,
-  serialized_end=1460,
+  serialized_start=1171,
+  serialized_end=1268,
 )
 _sym_db.RegisterEnumDescriptor(_DEVICETYPE)
 
@@ -97,8 +96,8 @@ _DATATYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=1462,
-  serialized_end=1561,
+  serialized_start=1270,
+  serialized_end=1369,
 )
 _sym_db.RegisterEnumDescriptor(_DATATYPE)
 
@@ -149,8 +148,8 @@ _DEVICE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=104,
-  serialized_end=175,
+  serialized_start=74,
+  serialized_end=145,
 )
 
 
@@ -216,8 +215,8 @@ _DEVICEINFO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=178,
-  serialized_end=387,
+  serialized_start=148,
+  serialized_end=357,
 )
 
 
@@ -262,8 +261,8 @@ _COORDINATES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=389,
-  serialized_end=435,
+  serialized_start=359,
+  serialized_end=405,
 )
 
 
@@ -315,8 +314,8 @@ _QUATERNION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=437,
-  serialized_end=493,
+  serialized_start=407,
+  serialized_end=463,
 )
 
 
@@ -354,8 +353,8 @@ _CATHETERCOORDINATES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=496,
-  serialized_end=628,
+  serialized_start=466,
+  serialized_end=598,
 )
 
 
@@ -393,8 +392,8 @@ _CATHETERDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=630,
-  serialized_end=729,
+  serialized_start=600,
+  serialized_end=699,
 )
 
 
@@ -439,52 +438,8 @@ _ROBOTCONTROLLERDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=731,
-  serialized_end=832,
-)
-
-
-_NULLABLEROBOTCONTROLLERDATA = _descriptor.Descriptor(
-  name='NullableRobotControllerData',
-  full_name='dopltechnologies.protos.NullableRobotControllerData',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  create_key=_descriptor._internal_create_key,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='null', full_name='dopltechnologies.protos.NullableRobotControllerData.null', index=0,
-      number=1, type=14, cpp_type=8, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='data', full_name='dopltechnologies.protos.NullableRobotControllerData.data', index=1,
-      number=2, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  serialized_options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-    _descriptor.OneofDescriptor(
-      name='kind', full_name='dopltechnologies.protos.NullableRobotControllerData.kind',
-      index=0, containing_type=None,
-      create_key=_descriptor._internal_create_key,
-    fields=[]),
-  ],
-  serialized_start=835,
-  serialized_end=978,
+  serialized_start=701,
+  serialized_end=802,
 )
 
 
@@ -529,8 +484,8 @@ _ELECTRICALSIGNALDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=980,
-  serialized_end=1080,
+  serialized_start=804,
+  serialized_end=904,
 )
 
 
@@ -550,7 +505,7 @@ _FRAME = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='nullableRobotControllerData', full_name='dopltechnologies.protos.Frame.nullableRobotControllerData', index=1,
+      name='robotControllerData', full_name='dopltechnologies.protos.Frame.robotControllerData', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -582,8 +537,8 @@ _FRAME = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1083,
-  serialized_end=1361,
+  serialized_start=907,
+  serialized_end=1169,
 )
 
 _DEVICE.fields_by_name['info'].message_type = _DEVICEINFO
@@ -593,17 +548,9 @@ _DEVICEINFO.fields_by_name['consumes'].enum_type = _DATATYPE
 _CATHETERCOORDINATES.fields_by_name['position'].message_type = _COORDINATES
 _CATHETERCOORDINATES.fields_by_name['rotation'].message_type = _QUATERNION
 _CATHETERDATA.fields_by_name['coordinates'].message_type = _CATHETERCOORDINATES
-_NULLABLEROBOTCONTROLLERDATA.fields_by_name['null'].enum_type = google_dot_protobuf_dot_struct__pb2._NULLVALUE
-_NULLABLEROBOTCONTROLLERDATA.fields_by_name['data'].message_type = _ROBOTCONTROLLERDATA
-_NULLABLEROBOTCONTROLLERDATA.oneofs_by_name['kind'].fields.append(
-  _NULLABLEROBOTCONTROLLERDATA.fields_by_name['null'])
-_NULLABLEROBOTCONTROLLERDATA.fields_by_name['null'].containing_oneof = _NULLABLEROBOTCONTROLLERDATA.oneofs_by_name['kind']
-_NULLABLEROBOTCONTROLLERDATA.oneofs_by_name['kind'].fields.append(
-  _NULLABLEROBOTCONTROLLERDATA.fields_by_name['data'])
-_NULLABLEROBOTCONTROLLERDATA.fields_by_name['data'].containing_oneof = _NULLABLEROBOTCONTROLLERDATA.oneofs_by_name['kind']
 _ELECTRICALSIGNALDATA.fields_by_name['created'].message_type = google_dot_protobuf_dot_timestamp__pb2._TIMESTAMP
 _FRAME.fields_by_name['catheterData'].message_type = _CATHETERDATA
-_FRAME.fields_by_name['nullableRobotControllerData'].message_type = _NULLABLEROBOTCONTROLLERDATA
+_FRAME.fields_by_name['robotControllerData'].message_type = _ROBOTCONTROLLERDATA
 _FRAME.fields_by_name['electricalSignals'].message_type = _ELECTRICALSIGNALDATA
 _FRAME.fields_by_name['created'].message_type = google_dot_protobuf_dot_timestamp__pb2._TIMESTAMP
 DESCRIPTOR.message_types_by_name['Device'] = _DEVICE
@@ -613,7 +560,6 @@ DESCRIPTOR.message_types_by_name['Quaternion'] = _QUATERNION
 DESCRIPTOR.message_types_by_name['CatheterCoordinates'] = _CATHETERCOORDINATES
 DESCRIPTOR.message_types_by_name['CatheterData'] = _CATHETERDATA
 DESCRIPTOR.message_types_by_name['RobotControllerData'] = _ROBOTCONTROLLERDATA
-DESCRIPTOR.message_types_by_name['NullableRobotControllerData'] = _NULLABLEROBOTCONTROLLERDATA
 DESCRIPTOR.message_types_by_name['ElectricalSignalData'] = _ELECTRICALSIGNALDATA
 DESCRIPTOR.message_types_by_name['Frame'] = _FRAME
 DESCRIPTOR.enum_types_by_name['DeviceType'] = _DEVICETYPE
@@ -668,13 +614,6 @@ RobotControllerData = _reflection.GeneratedProtocolMessageType('RobotControllerD
   # @@protoc_insertion_point(class_scope:dopltechnologies.protos.RobotControllerData)
   })
 _sym_db.RegisterMessage(RobotControllerData)
-
-NullableRobotControllerData = _reflection.GeneratedProtocolMessageType('NullableRobotControllerData', (_message.Message,), {
-  'DESCRIPTOR' : _NULLABLEROBOTCONTROLLERDATA,
-  '__module__' : 'common_pb2'
-  # @@protoc_insertion_point(class_scope:dopltechnologies.protos.NullableRobotControllerData)
-  })
-_sym_db.RegisterMessage(NullableRobotControllerData)
 
 ElectricalSignalData = _reflection.GeneratedProtocolMessageType('ElectricalSignalData', (_message.Message,), {
   'DESCRIPTOR' : _ELECTRICALSIGNALDATA,
