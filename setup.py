@@ -1,6 +1,6 @@
 from setuptools import setup, find_namespace_packages
 
-__version__ = 0.1
+__version__ = "0.0.1"
 
 setup(
    name='dopltech-api-protos',
