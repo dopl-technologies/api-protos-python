@@ -1,0 +1,17 @@
+language: python
+python:
+  - "2.7"
+  - "3.4"
+  - "3.5"
+  - "3.6"      # current default Python on Travis CI
+  - "3.7"
+  - "3.8"
+  - "3.9"
+deploy:
+  provider: pypi
+  username: __token__
+  password:
+    secure: kU5hmkxCQf6alnpxG9bfvRQnNdGQDkXIZ+RqPaasMfceibl68Y01Fmp1k0V9tLnNJAg0Toqn9kq+x+rSNJlBZJ/kXg1f+NmZ3L7KjF8oCy4IBILHpWpxL8fMTPJCutEzh/1zL8ektBjEZXGs0Cex/zw/g29LsiIeUwVFrqGx7k9VUNNcqz5yhL5vX5UvdzUPN+uScbSdiJvr4ldNscl9hVmooBaOWZ/M/BM1FUgFhmU8Oe9NCkeOZ3t7RvGHqpxEKsGQZtT8CB3ZcvOWsIyNBW+mROZq5b+0xSr4qwtL9P526ik77Ycj6rOkbzXlEC6xvjEyqArdVD0DS5rrnKvCld4kn9Jr2soziXNcs2KJtze8xHEfYTLFEZb9p+k/Y0Gp5HZVVt7P/4w3MmMb9QBGd+SwN0BJj6aQK80pFVlkz6l7UMIL8sAcsT10OKc7AQB4+uNdzoUmdhjZr3vcxZ3MVu77at4Ezxdkp62EnselFdD9xqbEQNZzuIYef5VGKM5LbaES8+YoUNzOimqVegan0BNtvqBRAUVJHf4Zp4bJ6UghpeMAcK2XyvQl+/lux5yIY+VkEWdn6dtYT1T1FjqlowfTkTvtGxiAGw9LSNyywpRY25FCpiTqIpDF49nSnjIZFQSvIb57dRRKGrNfeVo2ADQbz2U/OFKXR66g1X9TXVs=
+  on:
+    branch: main
+    tags: true
